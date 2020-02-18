@@ -1,0 +1,147 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+}   
+
+// --- Header Start --- //
+#header{
+    .middle-left{
+        background: #15212A;
+        width: 100%;
+        box-sizing: border-box;
+        
+        .news{
+            background: #EE5586;
+            color: #fff;
+            // display: inline-block;
+        }
+        
+        p{
+            color:#BCBCBC;
+            a{
+                color: #BAA30B;
+                font-size: 15px;
+            }
+        }
+        i{
+            color: #BAA30B;
+            border-radius: 5px;
+        }
+    }
+    .middle-right{
+        width: 100;
+        margin: auto;
+        li{ 
+            font-size: 12px;
+            cursor: pointer;
+            
+            a{  
+                margin: 10px;
+                color: #BCBCBC;
+            }
+        }
+    }
+    #main{
+        background: url(http://inebur.com/antler/template/img/topbanner08.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        .color-overlay{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(240deg,#000 50%,#3f004a 100%);
+            background-size: cover;
+            opacity: .7;
+            position: absolute;
+        }
+        .menu-wrap{
+            padding-top: 30px;
+        }
+        .menu-right{
+            width: 100%;
+            margin-left: 20px;
+            .area{
+                background: #FDD700;
+                padding:10px 20px;
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 1;
+                text-transform: uppercase;
+                border: 1px solid #FDD700;
+                border-radius: 50px;
+            }
+            .dropmenu{
+                list-style: none;
+                // padding: 20px 15px;
+                position: relative;
+            }
+            .dropdown{
+                position: absolute;
+                top: 100%;
+                width: 200px;
+                right: 0;
+                color: #BCBCBC;
+                list-style: none;
+                display: none;
+       
+            }
+        }   
+
+        .menu-ul{
+            
+            .badge{
+                background: #A5215E;
+                color: #fff;
+                
+            }
+            li{
+                &:hover{
+                    .dropdown{
+                        display: block;
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+                
+                padding-left: 15px;
+                a{  
+                    font:15px;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}
+// --- Header End --- //
+ 
+#about{
+    padding-top: 100px;
+    .words{
+        color: #fff;
+        width: 100%;
+        .sucsess{
+            margin: auto;
+            .icons{
+                position: relative;
+                top: 25px;
+                right: 25px;
+                color: #EE5586;
+            }
+        }
+    }
+    .clients{
+        width: 100%;
+        border-radius: 5px;
+        .top-content{
+            padding: 15px;
+            margin: auto;
+            background: #fff;
+           .clients-h{
+
+               h2{
+                   color:#F07099;
+               }
+           }
+        }
+    }
+}

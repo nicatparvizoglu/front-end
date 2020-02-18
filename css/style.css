@@ -1,0 +1,151 @@
+body {
+  font-family: 'Open Sans',sans-serif;
+}
+
+#header .middle-left {
+  background: #15212A;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .middle-left .news {
+  background: #EE5586;
+  color: #fff;
+}
+
+#header .middle-left p {
+  color: #BCBCBC;
+}
+
+#header .middle-left p a {
+  color: #BAA30B;
+  font-size: 15px;
+}
+
+#header .middle-left i {
+  color: #BAA30B;
+  border-radius: 5px;
+}
+
+#header .middle-right {
+  width: 100;
+  margin: auto;
+}
+
+#header .middle-right li {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#header .middle-right li a {
+  margin: 10px;
+  color: #BCBCBC;
+}
+
+#header #main {
+  background: url(http://inebur.com/antler/template/img/topbanner08.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#header #main .color-overlay {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(240deg, #000 50%, #3f004a 100%);
+  background-size: cover;
+  opacity: .7;
+  position: absolute;
+}
+
+#header #main .menu-wrap {
+  padding-top: 30px;
+}
+
+#header #main .menu-right {
+  width: 100%;
+  margin-left: 20px;
+}
+
+#header #main .menu-right .area {
+  background: #FDD700;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 1px solid #FDD700;
+  border-radius: 50px;
+}
+
+#header #main .menu-right .dropmenu {
+  list-style: none;
+  position: relative;
+}
+
+#header #main .menu-right .dropdown {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  right: 0;
+  color: #BCBCBC;
+  list-style: none;
+  display: none;
+}
+
+#header #main .menu-ul .badge {
+  background: #A5215E;
+  color: #fff;
+}
+
+#header #main .menu-ul li {
+  padding-left: 15px;
+}
+
+#header #main .menu-ul li:hover .dropdown {
+  display: block;
+  background: #fff;
+  color: #000;
+}
+
+#header #main .menu-ul li a {
+  font: 15px;
+  color: #fff;
+}
+
+#about {
+  padding-top: 100px;
+}
+
+#about .words {
+  color: #fff;
+  width: 100%;
+}
+
+#about .words .sucsess {
+  margin: auto;
+}
+
+#about .words .sucsess .icons {
+  position: relative;
+  top: 25px;
+  right: 25px;
+  color: #EE5586;
+}
+
+#about .clients {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#about .clients .top-content {
+  padding: 15px;
+  margin: auto;
+  background: #fff;
+}
+
+#about .clients .top-content .clients-h h2 {
+  color: #F07099;
+}
+/*# sourceMappingURL=style.css.map */
