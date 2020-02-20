@@ -136,16 +136,46 @@ body {
 
 #about .clients {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 #about .clients .top-content {
-  padding: 15px;
-  margin: auto;
+  padding: 40px 60px;
   background: #fff;
+  width: 100%;
 }
 
-#about .clients .top-content .clients-h h2 {
+#about .clients .top-content .svg {
+  width: 60px;
+  height: 60px;
+}
+
+#about .clients .top-content .tittle {
   color: #F07099;
+}
+
+#about .clients .top-content .fromer {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 26px;
+  font-size: 14px;
+  color: grey;
+}
+
+#circules .wrapper .img-sections {
+  background: red;
+}
+
+#circules .wrapper .team-info {
+  position: relative;
+}
+
+#circules .wrapper .team-info .plans {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+#circules .wrapper .svg {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
