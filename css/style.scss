@@ -1,124 +1,27 @@
 body{
     font-family: 'Open Sans',sans-serif;
 }   
-
-// --- Header Start --- //
-#header{
-    .middle-left{
-        background: #15212A;
-        width: 100%;
-        box-sizing: border-box;
-        
-        .news{
-            background: #EE5586;
-            color: #fff;
-            // display: inline-block;
-        }
-        
-        p{
-            color:#BCBCBC;
-            a{
-                color: #BAA30B;
-                font-size: 15px;
-            }
-        }
-        i{
-            color: #BAA30B;
-            border-radius: 5px;
-        }
-    }
-    .middle-right{
-        width: 100;
-        margin: auto;
-        li{ 
-            font-size: 12px;
-            cursor: pointer;
-            
-            a{  
-                margin: 10px;
-                color: #BCBCBC;
-            }
-        }
-    }
-    #main{
-        background: url(http://inebur.com/antler/template/img/topbanner08.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        .color-overlay{
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(240deg,#000 50%,#3f004a 100%);
-            background-size: cover;
-            opacity: .7;
-            position: absolute;
-        }
-        .menu-wrap{
-            padding-top: 30px;
-        }
-        .menu-right{
-            width: 100%;
-            margin-left: 20px;
-            .area{
-                background: #FDD700;
-                padding:10px 20px;
-                font-size: 10px;
-                font-weight: 500;
-                line-height: 1;
-                text-transform: uppercase;
-                border: 1px solid #FDD700;
-                border-radius: 50px;
-            }
-            .dropmenu{
-                list-style: none;
-                // padding: 20px 15px;
-                position: relative;
-            }
-            .dropdown{
-                position: absolute;
-                top: 100%;
-                width: 200px;
-                right: 0;
-                color: #BCBCBC;
-                list-style: none;
-                display: none;
-       
-            }
-        }   
-
-        .menu-ul{
-            
-            .badge{
-                background: #A5215E;
-                color: #fff;
-                
-            }
-            li{
-                &:hover{
-                    .dropdown{
-                        display: block;
-                        background: #fff;
-                        color: #000;
-                    }
-                }
-                
-                padding-left: 15px;
-                a{  
-                    font:15px;
-                    color: #fff;
-                }
-            }
-            
-        }
-    }
-}
-// --- Header End --- //
+@import "_mainnav";
  
 #about{
     padding-top: 100px;
     .words{
         color: #fff;
         width: 100%;
+        position: relative;
+        bottom: 55px;
+        left: 20px;
+        .about-us{
+            position: relative;
+            right: 25px;
+        }
+        h1{
+         font-size: 52px;
+         padding-bottom: 15px;
+        }
+        p{
+            margin-bottom: -5px;
+        }
         .sucsess{
             margin: auto;
             .icons{
@@ -135,16 +38,22 @@ body{
         .top-content{
             padding: 40px 60px;
             background: #fff;
+            border-radius: 15px;
             width: 100%;
                 .svg{
                     width: 60px;
-                    height: 60px    ;
+                    height: 60px;
+                    position: relative;
+                    right: 25px;
                 }
             .tittle{
-                color: #F07099;
+                color: #F06B96;
+                font-size: 22px;
+                font-weight: 500    ;
+                padding-bottom: 15px;
             }
             .fromer{
-                font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+                // font-family:"Open Sans Italic";
                 line-height: 26px;
                 font-size: 14px;
                 color: grey;
@@ -154,8 +63,10 @@ body{
 }
 // --------//
 
+// Circules Start //
 #circules{
     background: #EFEFEF;
+    padding-bottom: 80px;
     .team-words{
         margin-bottom:50px;
         margin-top:50px;
@@ -225,18 +136,77 @@ body{
     }
 }
 
+//------- Circules End -------//
 
-.nicat{
-    background: #16212A;
+// ------Map Start --------//
+#Map{
+    background: linear-gradient(-60deg,#3a6173 0,#16222a 100%)!important;
     width: 100%;
     height: 100vh;
-    position: relative;
-    .photo-svg{
-        opacity: .3;
-        width: 450px;
-        position: absolute;
-        top: 38%;
-        left: 38%;
+    .map-words{
+         padding-top:60px;
+    
+    h2{
+        color: #fff;
+    }
+    p{
+        color:#ABABAB;
+        span{
+            color: #EE5586;
+        }
+      a{
+        color: #EE5586;
+        border-bottom: solid 1px #ee5586;
+        &:hover{
+            border-bottom:none;
+            text-decoration: none;
+        }
+      }  
+    }
+ }
+ .service-map{
+     .map-img{
+         position: relative;
+         .location{
+            background: #EE5586;
+            width: 22px;
+            height: 22px;
+            border-radius: 24px;
+            border: 2px solid #fff;
+            position: absolute;
+            &.montreal{
+                top: 38%;
+                left: 46%;
+            }
+            &.newyork{
+                top: 44%;
+                left: 27%;
+            }
+        }
+     }
+   
+ }
+}
+// -------Map End-------//
 
+#case-study{
+    position: relative;
+    .case-word{
+        background: #A5215E;
+        color: #fff;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .case{
+        background: #EE5586;
+        position: relative; 
+        bottom: 80px;
+        border-radius: 15px;
+        img{
+            width: 100%;
+            opacity: .5;
+
+        }
     }
 }
