@@ -4,7 +4,19 @@ body{
 @import "_mainnav";
  
 #about{
+    background:url(../photo/backimg.jpg);
     padding-top: 100px;
+    width: 100%;  
+    height: 62vh;  
+    position: relative;
+    .color-overlay{
+        background: linear-gradient(240deg,#000 50%,#3f004a 100%);
+        width: 100%;
+        height: 62vh;
+        opacity: .7;
+        position: absolute;
+        top: 0;
+    }
     .words{
         color: #fff;
         width: 100%;
@@ -78,7 +90,15 @@ body{
         background: #fff;
     }
     .wrapper{
-        
+            i{
+                padding: 10px;
+                border-radius: 15px;
+                border: 1px solid #808080;
+                width: 35px;
+                background: #808080;
+            
+            }
+        }
         .img-sections{
             background:#fff;
             border-radius: 20px;
@@ -134,7 +154,7 @@ body{
             
         }
     }
-}
+
 
 //------- Circules End -------//
 
@@ -167,6 +187,9 @@ body{
  .service-map{
      .map-img{
          position: relative;
+         img{
+             opacity:0.43;
+         }
          .location{
             background: #EE5586;
             width: 22px;
@@ -176,11 +199,31 @@ body{
             position: absolute;
             &.montreal{
                 top: 38%;
-                left: 46%;
+                left: 28.5%;
             }
             &.newyork{
                 top: 44%;
                 left: 27%;
+            }
+            &.portugal{
+                top: 46%;
+                left: 44%;
+            }
+            &.london{
+                top: 38%;
+                left: 46%;
+            }
+            &.moskow{
+                top: 38%;
+                left: 58%;
+            }
+            &.hongkong{
+                top:53%;
+                left:79%;
+            }
+            &.singapure{
+                top: 63%;
+                left: 77%;
             }
         }
      }
@@ -193,6 +236,9 @@ body{
     position: relative;
     .case-word{
         background: #A5215E;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
         color: #fff;
         position: absolute;
         right: 15px;
@@ -209,4 +255,46 @@ body{
 
         }
     }
+}
+
+
+
+// -----maneger -------//
+#manager{
+    width: 100%;
+    height: 100vh;
+    .row{
+        display: flex;
+    }
+    position: relative;
+    .manager-text{
+        p{
+            color:#ABABAB;
+        }
+    }
+    .sales{
+         text-align: right;
+    
+    button{ 
+        background:#EE5586;
+        color: #ffff;
+        font-size: 14px;
+            // width: 50%;
+        padding: 10px 25px;
+       
+        border-radius: 20px;
+        border: 1px solid#EE5586;
+        transform: translateY(0);
+        transition: .5s;
+        &:hover{
+            background:#808080;
+            border: 1px solid #808080;
+            color: #fff;      
+            transform: translateY(-5px);
+            transition: .5s;
+            box-shadow:0 5px 10px 0 rgba(0,0,0,.3);
+        }
+
+    }
+}
 }

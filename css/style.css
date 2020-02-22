@@ -379,7 +379,20 @@ body {
 }
 
 #about {
+  background: url(../photo/backimg.jpg);
   padding-top: 100px;
+  width: 100%;
+  height: 62vh;
+  position: relative;
+}
+
+#about .color-overlay {
+  background: linear-gradient(240deg, #000 50%, #3f004a 100%);
+  width: 100%;
+  height: 62vh;
+  opacity: .7;
+  position: absolute;
+  top: 0;
 }
 
 #about .words {
@@ -465,30 +478,38 @@ body {
   background: #fff;
 }
 
-#circules .wrapper .img-sections {
+#circules .wrapper i {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #808080;
+  width: 35px;
+  background: #808080;
+}
+
+#circules .img-sections {
   background: #fff;
   border-radius: 20px;
 }
 
-#circules .wrapper .team-info {
+#circules .team-info {
   position: relative;
   padding: 40px 60px;
   padding-bottom: 80px;
 }
 
-#circules .wrapper .team-info .name {
+#circules .team-info .name {
   font-size: 15px;
 }
 
-#circules .wrapper .team-info .desc {
+#circules .team-info .desc {
   color: #ABABAB;
 }
 
-#circules .wrapper .team-info .desc:hover {
+#circules .team-info .desc:hover {
   color: #F79DB9;
 }
 
-#circules .wrapper .team-info .contact {
+#circules .team-info .contact {
   padding: 12px 30px;
   border-radius: 50px;
   border: 1px solid #fdd700;
@@ -509,7 +530,7 @@ body {
   cursor: pointer;
 }
 
-#circules .wrapper .team-info .contact:hover {
+#circules .team-info .contact:hover {
   background: #808080;
   border: 1px solid #808080;
   -webkit-transform: translateY(-5px);
@@ -519,7 +540,7 @@ body {
   color: #fff;
 }
 
-#circules .wrapper .team-info .plans {
+#circules .team-info .plans {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -527,7 +548,7 @@ body {
   color: #fff;
 }
 
-#circules .wrapper .svg {
+#circules .svg {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -568,6 +589,10 @@ body {
   position: relative;
 }
 
+#Map .service-map .map-img img {
+  opacity: 0.43;
+}
+
 #Map .service-map .map-img .location {
   background: #EE5586;
   width: 22px;
@@ -579,12 +604,37 @@ body {
 
 #Map .service-map .map-img .location.montreal {
   top: 38%;
-  left: 46%;
+  left: 28.5%;
 }
 
 #Map .service-map .map-img .location.newyork {
   top: 44%;
   left: 27%;
+}
+
+#Map .service-map .map-img .location.portugal {
+  top: 46%;
+  left: 44%;
+}
+
+#Map .service-map .map-img .location.london {
+  top: 38%;
+  left: 46%;
+}
+
+#Map .service-map .map-img .location.moskow {
+  top: 38%;
+  left: 58%;
+}
+
+#Map .service-map .map-img .location.hongkong {
+  top: 53%;
+  left: 79%;
+}
+
+#Map .service-map .map-img .location.singapure {
+  top: 63%;
+  left: 77%;
 }
 
 #case-study {
@@ -593,6 +643,9 @@ body {
 
 #case-study .case-word {
   background: #A5215E;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
   color: #fff;
   position: absolute;
   right: 15px;
@@ -609,5 +662,50 @@ body {
 #case-study .case img {
   width: 100%;
   opacity: .5;
+}
+
+#manager {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#manager .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#manager .manager-text p {
+  color: #ABABAB;
+}
+
+#manager .sales {
+  text-align: right;
+}
+
+#manager .sales button {
+  background: #EE5586;
+  color: #ffff;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid #EE5586;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#manager .sales button:hover {
+  background: #808080;
+  border: 1px solid #808080;
+  color: #fff;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
