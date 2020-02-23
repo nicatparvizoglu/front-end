@@ -9,3 +9,19 @@ $(window).scroll(function(){
         $("#mynavbar").css("top","0")
     }
 });
+
+var imp=document.querySelector(".imp")
+var chat=document.querySelector(".main-chat")
+imp.onclick=function(){
+    chat.classList.toggle("active")
+}
+
+
+$('.case-tittle').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  })
+  ;
+ 

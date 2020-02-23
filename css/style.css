@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #topnav {
@@ -460,6 +460,12 @@ body {
   color: grey;
 }
 
+@media (max-width: 768px) {
+  #about .sucsess {
+    display: none;
+  }
+}
+
 #circules {
   background: #EFEFEF;
   padding-bottom: 80px;
@@ -478,38 +484,71 @@ body {
   background: #fff;
 }
 
-#circules .wrapper i {
-  padding: 10px;
+#circules .wrapper .soc-icons {
+  position: relative;
+}
+
+#circules .wrapper .soc-icons:hover .icons {
+  visibility: visible;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+#circules .wrapper .soc-icons .icons {
+  position: absolute;
+  top: 26%;
+  left: 28%;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  text-align: center;
+}
+
+#circules .wrapper .soc-icons .icons i {
+  color: #fff;
+  padding: 8px;
   border-radius: 15px;
   border: 1px solid #808080;
   width: 35px;
   background: #808080;
 }
 
-#circules .img-sections {
+#circules .wrapper .img-sections {
   background: #fff;
   border-radius: 20px;
 }
 
-#circules .team-info {
+#circules .wrapper .team-info {
   position: relative;
   padding: 40px 60px;
   padding-bottom: 80px;
 }
 
-#circules .team-info .name {
+#circules .wrapper .team-info .name {
   font-size: 15px;
 }
 
-#circules .team-info .desc {
+#circules .wrapper .team-info .desc {
   color: #ABABAB;
 }
 
-#circules .team-info .desc:hover {
+#circules .wrapper .team-info .desc:hover {
   color: #F79DB9;
 }
 
-#circules .team-info .contact {
+#circules .wrapper .team-info .contact {
   padding: 12px 30px;
   border-radius: 50px;
   border: 1px solid #fdd700;
@@ -530,7 +569,7 @@ body {
   cursor: pointer;
 }
 
-#circules .team-info .contact:hover {
+#circules .wrapper .team-info .contact:hover {
   background: #808080;
   border: 1px solid #808080;
   -webkit-transform: translateY(-5px);
@@ -540,15 +579,20 @@ body {
   color: #fff;
 }
 
-#circules .team-info .plans {
+#circules .wrapper .team-info .plans {
   position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  width: 13%;
   top: 12px;
   right: 12px;
   background: #EE5586;
+  border-radius: 5px;
   color: #fff;
 }
 
-#circules .svg {
+#circules .wrapper .svg {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -556,7 +600,6 @@ body {
 #Map {
   background: linear-gradient(-60deg, #3a6173 0, #16222a 100%) !important;
   width: 100%;
-  height: 100vh;
 }
 
 #Map .map-words {
@@ -646,6 +689,8 @@ body {
   border-radius: 5px;
   font-size: 12px;
   font-weight: 700;
+  text-align: center;
+  width: 6%;
   color: #fff;
   position: absolute;
   right: 15px;
@@ -659,6 +704,27 @@ body {
   border-radius: 15px;
 }
 
+#case-study .case .case-tittle {
+  width: 80%;
+}
+
+#case-study .case .case-tittle button {
+  padding: 12px 15px;
+  border-radius: 50px;
+  border: 1px solid yellow;
+  background: yellow;
+  color: #000;
+}
+
+#case-study .case h3 {
+  color: #fff;
+}
+
+#case-study .case p {
+  font-size: 16px;
+  color: #fff;
+}
+
 #case-study .case img {
   width: 100%;
   opacity: .5;
@@ -666,7 +732,6 @@ body {
 
 #manager {
   width: 100%;
-  height: 100vh;
   position: relative;
 }
 
@@ -707,5 +772,248 @@ body {
   transition: .5s;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#subscribe-p5 {
+  padding: 60px 0;
+  background-color: #15212a;
+  position: relative;
+}
+
+#subscribe-p5 .symbol {
+  width: 450px;
+  position: absolute;
+  top: 38%;
+  right: 39%;
+  opacity: .4;
+}
+
+#subscribe-p5 h5 {
+  padding: 0 40px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+#subscribe-p5 ul {
+  list-style: none;
+}
+
+#subscribe-p5 ul li {
+  padding: 8px 0;
+  color: grey;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#subscribe-p5 ul li:hover {
+  color: #fdd700;
+}
+
+#subscribe-p5 p {
+  padding: 10px 0;
+  color: grey;
+}
+
+#subscribe-p5 .ti {
+  width: 42px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #ee5586;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#subscribe-p5 .ti:hover {
+  color: #fdd700;
+}
+
+#subscribe-p5 .login {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#subscribe-p5 .login .inp {
+  position: relative;
+  padding: 12px 180px;
+  text-align: left;
+  border-radius: 30px;
+  border: none;
+}
+
+#subscribe-p5 .login button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #fdd700;
+  border: none;
+  position: absolute;
+  right: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 500;
+}
+
+#subscribe-p5 .login button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: grey;
+  color: #fff;
+}
+
+#subscribe-p5 .login p {
+  text-align: center;
+}
+
+#subscribe-p5 .card1 {
+  margin-top: 180px;
+  padding-bottom: 20px;
+}
+
+#subscribe-p5 .card1 .a1 {
+  padding: 8px 10px;
+  background-color: #fdd700;
+  margin: 0 5px;
+  border-radius: 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#subscribe-p5 .card1 .a1:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#subscribe-p5 .card1 .a2 {
+  padding: 8px 10px;
+  background-color: #a8a8a8;
+  border-radius: 12px;
+  color: grey;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#subscribe-p5 .card1 span {
+  color: grey;
+  margin: 0 10px;
+}
+
+#subscribe-p5 .card2 {
+  margin-top: 180px;
+  padding-bottom: 10px;
+}
+
+#subscribe-p5 .card2 span {
+  color: grey;
+}
+
+#subscribe-p5 .card2 .bi {
+  font-size: 30px;
+  color: grey;
+  padding: 0 2px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#subscribe-p5 .card2 .bi:hover {
+  color: #fdd700;
+}
+
+@media (max-width: 992px) {
+  #subscribe-p5 .login {
+    display: none;
+  }
+  #subscribe-p5 .card1 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  #subscribe-p5 .card2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #subscribe-p5 {
+    text-align: center;
+  }
+  #subscribe-p5 h5 {
+    padding: 0;
+  }
+}
+
+.imp {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#chat {
+  position: fixed;
+  bottom: 12%;
+  right: 2%;
+  z-index: 1000;
+}
+
+#chat .main-chat {
+  position: relative;
+  bottom: 100%;
+  right: 0;
+  width: 340px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  display: none;
+}
+
+#chat .main-chat.active {
+  display: block;
+}
+
+#chat .main-chat .top p {
+  font-size: 14px;
+  text-align: center;
+}
+
+#chat .main-chat .bottom {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#chat .main-chat .bottom input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#chat .main-chat .bottom .l-input {
+  padding: 15px 10px;
+}
+
+#chat .main-chat .bottom button {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#chat .main-chat .bottom button:hover {
+  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */
